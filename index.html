@@ -1,168 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NLBC-Website</title>
-    <link rel="stylesheet" href="Form.css" />
-  </head>
-  <body>
-    <header class="moon">
-      <a href="#" class="logo">
-        <img src="bap.jpg" alt="logo" />
-        <h1 class="box">WELCOME TO NEW LIFE BAPTIST CHURCH-MUMFORD</h1>
-      </a>
-
-      <div id="navbar">
-        <a class="not" id="hv" href="">Home</a>
-        <a class="how" id="hv" href="#">About Us</a>
-        <a class="but" id="hv" href="">Product</a>
-        <a class="why" id="hv" href="loc">Contact Us</a>
-        <a class="bus" id="hv" href="mailto:thesaviourchrist94@gmail.com"
-          >E-mail Us</a
-        >
-        <a class="video" id="hv" href="index.html">Forms</a>
-        <input type="text" id="search-bar" placeholder="search" />
-      </div>
-      <hr />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Life Baptist Church - Mumford</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="bap.jpg" alt="New Life Baptist Church Logo">
+                    </div>
+                    <h1 class="church-name">NEW LIFE BAPTIST CHURCH<br>MUMFORD</h1>
+                </div>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-compass"></i> Ministries</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                        <li><a href="mailto:thesaviourchrist94@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
+                        <li><a href="index.html"><i class="fas fa-file-alt"></i> Forms</a></li>
+                    </ul>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Search...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
-      <article>
-        <marquee class="viv" behavior="scroll" direction="left"
-          >Read our daily messages here, May God Bless You!!!</marquee
-        >
-        <h2 class="ma">Weekly Activities</h2>
-        <hr />
 
-        <div id="act">
-          <a>
-            <h2>SUNDAY</h2>
-            Morning Time : 9:30am - 12:30pm<br />
-            Evening Time : 7:00pm - 8:30pm
-          </a>
-          <a>
-            <h2>TUESDAY</h2>
-            Evening Time : 7:00pm - 8:30pm
-          </a>
-          <a>
-            <h2>FRIDAY</h2>
-            Evening Time : 7:00pm - 8:30pm
-          </a>
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="container">
+            <marquee behavior="scroll" direction="left">
+                <i class="fas fa-cross"></i> Read our daily messages here, May God Bless You!!!
+            </marquee>
         </div>
-        <h3 style="text-align: center">GREAT COMMISSION</h3>
-        <p>
-          Every Saturday is a SOUL-WINNING day, This is the time we go out and
-          preach the Gospel to others for them to be saved. It start in the
-          morning from 10am - 12 pm.
-        </p>
+    </div>
 
-        <hr color="blue" />
-
-        <h3 class="ga">THIS IS OUR GALLERY</h3>
-
-        <div class="row">
-          <div class="column">
-            <img src="BI.jpg" alt="Snow" style="width: 100%" />
-          </div>
-
-          <div class="column">
-            <img src="BI.jpg" alt="Snow" style="width: 100%" />
-          </div>
-
-          <div class="column">
-            <img src="JJ.jpg" alt="Mountains" style="width: 100%" />
-          </div>
-
-          <div class="column">
-            <img src="P.jpg" alt="Mountains" style="width: 100%" />
-          </div>
-          <br />
-
-          <div class="column">
-            <img src="F.jpg" alt="Mountains" style="width: 100%" />
-          </div>
-          <br />
-
-          <div class="column">
-            <img src="JJ.jpg" alt="Mountains" style="width: 100%" />
-          </div>
-          <br />
-
-          <div class="column">
-            <img src="BI.jpg" alt="Mountains" style="width: 100%" />
-          </div>
-          <br />
-
-          <div class="column">
-            <img src="JJ.jpg" alt="Mountains" style="width: 100%" />
-          </div>
-          <br />
-        </div>
-      </article>
-      <section>
-        <h3>ABOUT THE CHURCH</h3>
-        <div class="responsive">
-          <div class="gallery">
-            <a target="_blank" href="it.jpg">
-              <img src="it.jpg" alt="Cinque Terre" style="width: 100%" />
-            </a>
-            <div class="desc">
-              This is our Church building, please feel free to donate to support
-              it. Jesus loves you so much
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Weekly Activities Section -->
+        <section>
+            <h2 class="section-title">Weekly Activities</h2>
+            
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>SUNDAY</h3>
+                    <p><span class="highlight">Morning Service:</span> 9:30am - 12:30pm</p>
+                    <p><span class="highlight">Evening Service:</span> 7:00pm - 8:30pm</p>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>TUESDAY</h3>
+                    <p><span class="highlight">Bible Study:</span> 7:00pm - 8:30pm</p>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>FRIDAY</h3>
+                    <p><span class="highlight">Prayer Meeting:</span> 7:00pm - 8:30pm</p>
+                </div>
             </div>
-          </div>
-
-          <div class="gallery">
-            <a target="_blank" href="group.jpg">
-              <img src="group.jpg" alt="Forest" style="width: 100%" />
-            </a>
-            <div class="desc">
-              Go ye therefore into the all nation, soldiers ready for winning
-              souls for our Lord Jesus Christ. This is the way the master went
-              so must we do so.
+            
+            <div class="text-center mb-20">
+                <h3 class="highlight">GREAT COMMISSION</h3>
+                <p>
+                    Every Saturday is a SOUL-WINNING day. This is the time we go out and
+                    preach the Gospel to others for them to be saved. It starts in the
+                    morning from 10am - 12pm.
+                </p>
             </div>
-          </div>
+            
+            <hr class="divider">
+        </section>
 
-          <div class="gallery">
-            <a target="_blank" href="P.jpg">
-              <img src="P.jpg" alt="Northern Lights" style="width: 100%" />
-            </a>
-            <div class="desc">
-              HIGHER GROUND: Some members of higher ground in New Life Baptist
-              Church.
+        <!-- Gallery Section -->
+        <section>
+            <h2 class="section-title">CHURCH GALLERY</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="BI.jpg" alt="Church activity">
+                </div>
+                <div class="gallery-item">
+                    <img src="BI.jpg" alt="Church service">
+                </div>
+                <div class="gallery-item">
+                    <img src="JJ.jpg" alt="Church members">
+                </div>
+                <div class="gallery-item">
+                    <img src="P.jpg" alt="Church event">
+                </div>
+                <div class="gallery-item">
+                    <img src="F.jpg" alt="Baptism">
+                </div>
+                <div class="gallery-item">
+                    <img src="JJ.jpg" alt=" Worship service">
+                </div>
+                <div class="gallery-item">
+                    <img src="BI.jpg" alt="Bible study">
+                </div>
+                <div class="gallery-item">
+                    <img src="JJ.jpg" alt="Fellowship">
+                </div>
             </div>
-          </div>
+            
+            <hr class="divider">
+        </section>
 
-          <div class="gallery">
-            <a target="_blank" href="bap.jpg">
-              <img src="bap.jpg" alt="Mountains" style="width: 100%" />
-            </a>
-            <div class="desc">
-              This is the Logo of the Church, NEW LIFE BAPTIST CHURCH
+        <!-- About Section -->
+        <section>
+            <h2 class="section-title">ABOUT OUR CHURCH</h2>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <img src="it.jpg" alt="Church building">
+                    <div class="card-desc">
+                        <h4>Our Church Building</h4>
+                        <p>This is our Church building, please feel free to donate to support it. Jesus loves you so much.</p>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <img src="group.jpg" alt="Church group">
+                    <div class="card-desc">
+                        <h4>Soul Winning Team</h4>
+                        <p>Go ye therefore into all nations, soldiers ready for winning souls for our Lord Jesus Christ.</p>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <img src="P.jpg" alt="Higher Ground members">
+                    <div class="card-desc">
+                        <h4>Higher Ground Ministry</h4>
+                        <p>Some members of Higher Ground in New Life Baptist Church.</p>
+                    </div>
+                </div>
+                
+                <div class="about-card">
+                    <img src="bap.jpg" alt="Church logo">
+                    <div class="card-desc">
+                        <h4>Our Church Logo</h4>
+                        <p>This is the Logo of the Church, NEW LIFE BAPTIST CHURCH.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <footer id="footer">
-      <div class="loc">
-        <a>
-          <h5>Church location</h5>
-          central region Mumford, cemetry road<br />
-          near the MTN mast
-        </a>
-        <a>
-          <h5>Phone/WhatsApp</h5>
-          Phone: 0540317358<br />
-          WhatsApp: 0241861518
-        </a>
-        <a>
-          <h5>Church location</h5>
-          central region Mumford, cemetry road<br />
-          near the MTN mast
-          <br /><br />
-        </a>
-      </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Church Location</h5>
+                    <p>Central Region Mumford,<br>Cemetery Road<br>Near the MTN Mast</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Contact Information</h5>
+                    <p>Phone: 0540317358<br>WhatsApp: 0241861518<br>Email: thesaviourchrist94@gmail.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Service Times</h5>
+                    <p>Sunday: 9:30am & 7:00pm<br>Tuesday: 7:00pm<br>Friday: 7:00pm</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 New Life Baptist Church - Mumford. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <script>
+        // Simple JavaScript for search functionality
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            const searchText = document.getElementById('search-bar').value;
+            if (searchText) {
+                alert('Searching for: ' + searchText);
+                // In a real implementation, this would trigger a search function
+            }
+        });
+        
+        // Allow pressing Enter to search
+        document.getElementById('search-bar').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-btn').click();
+            }
+        });
+    </script>
+</body>
 </html>
